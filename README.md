@@ -1,2 +1,2 @@
 # evanlab
-git lab for myself
+for each technology learning
