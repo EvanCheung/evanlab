@@ -1,0 +1,38 @@
+2019-04-29 23:28:39  [ main:75086 ] - [ ERROR ]  [Microsoft][SQLServer 2000 Driver for JDBC]Error establishing socket.
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC]Error establishing socket.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSConnection.<init>(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplConnection.open(Unknown Source)
+	at com.microsoft.jdbc.base.BaseConnection.getNewImplConnection(Unknown Source)
+	at com.microsoft.jdbc.base.BaseConnection.open(Unknown Source)
+	at com.microsoft.jdbc.base.BaseDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.evanlab.DBUtil.getConnection(DBUtil.java:27)
+	at com.evanlab.VoiceContentExporter.export(VoiceContentExporter.java:18)
+	at com.evanlab.VoiceContentExporter.main(VoiceContentExporter.java:103)
+2019-04-29 23:28:39  [ main:75090 ] - [ ERROR ]  
+java.lang.NullPointerException
+	at com.evanlab.VoiceContentExporter.export(VoiceContentExporter.java:24)
+	at com.evanlab.VoiceContentExporter.main(VoiceContentExporter.java:103)
+2019-04-29 23:30:26  [ main:75083 ] - [ ERROR ]  [Microsoft][SQLServer 2000 Driver for JDBC]Error establishing socket.
+java.sql.SQLException: [Microsoft][SQLServer 2000 Driver for JDBC]Error establishing socket.
+	at com.microsoft.jdbc.base.BaseExceptions.createException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.base.BaseExceptions.getException(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.tds.TDSConnection.<init>(Unknown Source)
+	at com.microsoft.jdbc.sqlserver.SQLServerImplConnection.open(Unknown Source)
+	at com.microsoft.jdbc.base.BaseConnection.getNewImplConnection(Unknown Source)
+	at com.microsoft.jdbc.base.BaseConnection.open(Unknown Source)
+	at com.microsoft.jdbc.base.BaseDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.evanlab.DBUtil.getConnection(DBUtil.java:27)
+	at com.evanlab.VoiceContentExporter.export(VoiceContentExporter.java:18)
+	at com.evanlab.VoiceContentExporter.main(VoiceContentExporter.java:103)
+2019-04-29 23:30:26  [ main:75086 ] - [ ERROR ]  
+java.lang.NullPointerException
+	at com.evanlab.VoiceContentExporter.export(VoiceContentExporter.java:24)
+	at com.evanlab.VoiceContentExporter.main(VoiceContentExporter.java:103)
