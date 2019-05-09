@@ -52,11 +52,7 @@ public class VoiceContentExporter {
                     String seqtitle = rs.getString("seqtitle");
                     String doctype = rs.getString("type");
                     logger.debug("Get content for file ["+_filearchno+"] & ["+_docid+"] - " + seqid + ";" + seqtitle + ";" + doctype);
-//                    InputStream in =rs.getAsciiStream("content");//1.3;//rs.getAsciiStream("textorcontent");//1.0 // rs.getBlob("textorcontent").getBinaryStream();//.getBinaryStream("textorcontent");
-                    InputStream in =rs.getBinaryStream("content");//1.4;
-//                    Reader in =rs.getCharacterStream("textorcontent");//1.2
-//                    rs.get
-//                    InputStream in =rs.getClob("textorcontent").getAsciiStream();//v1.1
+                    InputStream in =rs.getBinaryStream("content");
                     logger.debug("before output contentCount = " + contentCount + " of file :["+docid+"]");
                     FileOutputStream out = null;
                     try{
